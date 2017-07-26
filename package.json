@@ -16,5 +16,10 @@
     "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
+  },
+  "homepage": "http://linton-portman.github.io/Markdown-Previewer",
+  "deploy": "npm run build&&gh-pages -d build"
 }
